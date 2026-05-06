@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Surfaces -->
+    <color name="bg">#FFFFFF</color>
+    <color name="surface_alt">#F4F4F4</color>
+    <color name="divider">#E5E5E5</color>
+    <color name="track">#E5E5E5</color>
+    <color name="track_fill">#000000</color>
+
+    <!-- Text -->
+    <color name="text_primary">#000000</color>
+    <color name="text_muted">#666666</color>
+    <color name="text_hint">#999999</color>
+
+    <!-- Semantic -->
+    <color name="expense">#D32F2F</color>
+    <color name="income">#000000</color>
+
+    <!-- Button surfaces -->
+    <color name="btn_bg">#000000</color>
+    <color name="btn_fg">#FFFFFF</color>
+    <color name="btn_subtle_bg">#F0F0F0</color>
+</resources>

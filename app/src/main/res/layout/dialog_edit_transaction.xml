@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/edit_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        app:selectionRequired="true">
+
+        <Button
+            android:id="@+id/edit_type_expense"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Expense" />
+
+        <Button
+            android:id="@+id/edit_type_income"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Income" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMOUNT"
+        android:textColor="@color/text_hint"
+        android:textSize="9sp"
+        android:letterSpacing="0.2"
+        android:fontFamily="monospace"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/edit_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:hint="0.00"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:backgroundTint="@color/text_primary"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DESCRIPTION"
+        android:textColor="@color/text_hint"
+        android:textSize="9sp"
+        android:letterSpacing="0.2"
+        android:fontFamily="monospace"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_hint"
+        android:hint="Merchant or source"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:backgroundTint="@color/text_primary"
+        android:inputType="textCapWords"
+        android:maxLines="2"
+        android:layout_marginTop="4dp" />
+</LinearLayout>
